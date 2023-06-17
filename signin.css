@@ -1,0 +1,15 @@
+*{
+    
+}
+.bodi{
+    background-color:#010623 ;
+    height: 700px;
+}
+
+.hi, .ok, .bro{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+ }
+
+ 

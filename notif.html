@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Website Notifications</title>
+  <style>
+    #notification {
+      display: none;
+      position: fixed;
+      top: 10px;
+      right: 10px;
+      background-color: #f8f8f8;
+      padding: 10px;
+      border: 1px solid #ddd;
+      border-radius: 4px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+  </style>
+</head>
+<body>
+  <h1>Website Notifications</h1>
+  <button onclick="showNotification()">Show Notification</button>
+
+  <div id="notification"></div>
+
+  <script>
+    function showNotification() {
+      var notification = document.getElementById('notification');
+      notification.textContent = 'This is a notification.';
+      notification.style.display = 'block';
+
+      setTimeout(function() {
+        notification.style.display = 'none';
+      }, 5000);
+    }
+  </script>
+</body>
+</html>
